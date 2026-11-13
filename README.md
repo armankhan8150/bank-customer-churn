@@ -96,7 +96,7 @@ Open `train.ipynb` in Jupyter and run all cells. The notebook saves fresh `model
 
 ## App Preview
 
-![Bank Customer Churn Predictor App](assets\app_screenshot.png)
+![Bank Customer Churn Predictor App](assets/app_screenshot.png)
 
 The app collects 10 customer features via input widgets and predicts churn probability in real time.
 
@@ -114,7 +114,7 @@ The app collects 10 customer features via input widgets and predicts churn proba
 
 ## Training Loss Curve
 
-![Training vs Validation Loss](assets\loss_plot.png)
+![Training vs Validation Loss](assets/loss_plot.png)
 
 Both curves decrease together without diverging — the model is generalising, not overfitting.
 
