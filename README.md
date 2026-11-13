@@ -94,7 +94,7 @@ Open `train.ipynb` in Jupyter and run all cells. The notebook saves fresh `model
 
 ---
 
-## App Preview
+## App Preview [Click](https://bank-customer-churn-lfqlznawwm99ftxnpsf9wx.streamlit.app/)
 
 ![Bank Customer Churn Predictor App](assets/app_screenshot.png)
 
