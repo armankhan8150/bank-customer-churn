@@ -1,8 +1,12 @@
+from pathlib import Path
+
 import joblib
 import numpy as np
 import pandas as pd
 import streamlit as st
 import tensorflow as tf
+
+BASE_DIR = Path(__file__).parent
 
 # ─── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -14,8 +18,8 @@ st.set_page_config(
 # ─── Load model & preprocessor once ──────────────────────────────────────────
 @st.cache_resource
 def load_artifacts():
-    model        = tf.keras.models.load_model("model\\model.keras")
-    preprocessor = joblib.load("model\\preprocessor.pkl")
+    model        = tf.keras.models.load_model(BASE_DIR / "model" / "model.keras")
+    preprocessor = joblib.load(BASE_DIR / "model" / "preprocessor.pkl")
     return model, preprocessor
 
 model, preprocessor = load_artifacts()
